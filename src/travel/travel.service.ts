@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { CreateTravelDto } from './dto/create-travel.dto.js';
 import { UpdateTravelDto } from './dto/update-travel.dto.js';
+import { identity } from 'rxjs';
 
 @Injectable()
 export class TravelService {
@@ -23,4 +24,7 @@ export class TravelService {
   remove(id: number) {
     return `This action removes a #${id} travel`;
   }
+    private trips=[{id: 1, name:'To China', price:9000},
+    {id: 2, name:'To Morocco', price:4000}
+  ]
 }
