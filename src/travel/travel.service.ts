@@ -24,7 +24,8 @@ export class TravelService {
   remove(id: number) {
     return `This action removes a #${id} travel`;
   }
-    private trips=[{id: 1, name:'To China', price:9000},
+    private trips=[
+    {id: 1, name:'To China', price:9000},
     {id: 2, name:'To Morocco', price:4000}
   ]
 }
